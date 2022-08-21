@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Home"
+        android:icon="@drawable/home"
+        android:id="@+id/homenav"/>
+    <item android:title="Web"
+        android:icon="@drawable/www"
+        android:id="@+id/webnav"/>
+    <item android:title="Twitter"
+        android:icon="@drawable/tweet"
+        android:id="@+id/TweetNav"/>
+    <item android:title="LinkedIn"
+        android:icon="@drawable/linkedin"
+        android:id="@+id/LinkedInNav"/>
+    <item android:title="Profile"
+        android:icon="@drawable/profile"
+        android:id="@+id/ProfileNav"/>
+</menu>

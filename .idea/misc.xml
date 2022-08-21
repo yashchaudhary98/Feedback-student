@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/drawable-v24/bg_icons.xml" value="0.1805" />
+        <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/drawable/auth_points.xml" value="0.1805" />
+        <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/drawable/backgroung_view.xml" value="0.2035" />
+        <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/drawable/call.xml" value="0.242" />
+        <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/drawable/dashboard.xml" value="0.1805" />
+        <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/drawable/dashboard_bg.xml" value="0.242" />
+        <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/drawable/googlebackgroun.xml" value="0.2035" />
+        <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/drawable/gradient.xml" value="0.2035" />
+        <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/drawable/mail.xml" value="0.242" />
+        <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/layout-w936dp/progress_dialog.xml" value="0.22" />
+        <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/layout/activity_contact.xml" value="0.33" />
+        <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/layout/activity_ct_marks.xml" value="0.27850877192982454" />
+        <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/layout/activity_curriculum.xml" value="0.26015625" />
+        <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/layout/activity_data_input.xml" value="0.5" />
+        <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/layout/activity_faculty_profile.xml" value="0.33" />
+        <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/layout/activity_feedback_input.xml" value="0.33" />
+        <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/layout/activity_introduction.xml" value="0.28547008547008546" />
+        <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/layout/activity_linked_in_page.xml" value="0.28547008547008546" />
+        <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/layout/activity_login_authenticate.xml" value="0.33" />
+        <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/layout/activity_login_sign_in.xml" value="0.33" />
+        <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/layout/activity_main.xml" value="0.28547008547008546" />
+        <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/layout/activity_profile.xml" value="0.33" />
+        <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/layout/activity_profile_page.xml" value="0.25" />
+        <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/layout/activity_result.xml" value="0.26015625" />
+        <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/layout/activity_splash.xml" value="0.28088926891834115" />
+        <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/layout/dropdown_menu.xml" value="0.28559213339033773" />
+        <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/layout/fragment_home_.xml" value="0.28547008547008546" />
+        <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/layout/fragment_profile_page_1.xml" value="0.2846153846153846" />
+        <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/layout/fragment_profile_page_user.xml" value="0.2846153846153846" />
+        <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/layout/header.xml" value="0.25" />
+        <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/layout/profile_page.xml" value="0.2846153846153846" />
+        <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/layout/progress_dialog.xml" value="0.284737067122702" />
+        <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/menu/bottom_navmenu.xml" value="0.28547008547008546" />
+        <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/menu/side_nav.xml" value="0.25" />
+        <entry key="..\:/flutter_windows_2.2.3-stable/KSVCEM/app/src/main/res/drawable/backgroung_view.xml" value="0.2155" />
+        <entry key="..\:/flutter_windows_2.2.3-stable/KSVCEM/app/src/main/res/drawable/googlebackgroun.xml" value="0.1" />
+        <entry key="..\:/flutter_windows_2.2.3-stable/KSVCEM/app/src/main/res/drawable/gradient.xml" value="0.215" />
+        <entry key="..\:/flutter_windows_2.2.3-stable/KSVCEM/app/src/main/res/drawable/ic_screenshot_2022_04_27_010448.xml" value="0.2455" />
+        <entry key="..\:/flutter_windows_2.2.3-stable/KSVCEM/app/src/main/res/drawable/logo.xml" value="0.1" />
+        <entry key="..\:/flutter_windows_2.2.3-stable/KSVCEM/app/src/main/res/layout/activity_data_input.xml" value="0.13852073535699017" />
+        <entry key="..\:/flutter_windows_2.2.3-stable/KSVCEM/app/src/main/res/layout/activity_feedback_input.xml" value="0.1" />
+        <entry key="..\:/flutter_windows_2.2.3-stable/KSVCEM/app/src/main/res/layout/activity_home_screen.xml" value="0.25" />
+        <entry key="..\:/flutter_windows_2.2.3-stable/KSVCEM/app/src/main/res/layout/activity_introduction.xml" value="0.33" />
+        <entry key="..\:/flutter_windows_2.2.3-stable/KSVCEM/app/src/main/res/layout/activity_login_access.xml" value="0.25" />
+        <entry key="..\:/flutter_windows_2.2.3-stable/KSVCEM/app/src/main/res/layout/activity_login_authenticate.xml" value="0.33" />
+        <entry key="..\:/flutter_windows_2.2.3-stable/KSVCEM/app/src/main/res/layout/activity_login_sign_in.xml" value="0.2817443351859769" />
+        <entry key="..\:/flutter_windows_2.2.3-stable/KSVCEM/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/flutter_windows_2.2.3-stable/KSVCEM/app/src/main/res/layout/activity_splash.xml" value="0.25" />
+        <entry key="..\:/flutter_windows_2.2.3-stable/KSVCEM/app/src/main/res/layout/activity_student_admin.xml" value="0.23596014492753623" />
+        <entry key="..\:/flutter_windows_2.2.3-stable/KSVCEM/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1125" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.12" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "769523955571",
+    "firebase_url": "https://feedback-college-default-rtdb.firebaseio.com",
+    "project_id": "feedback-college",
+    "storage_bucket": "feedback-college.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:769523955571:android:f7264b43530fb04e17b706",
+        "android_client_info": {
+          "package_name": "com.example.ksvcem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "769523955571-imnifr50kue88kvhm07pi258a49gubfc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAy_WihzPX3Agk-lW0zJ1Rv6hoRneUtm6o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "769523955571-imnifr50kue88kvhm07pi258a49gubfc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

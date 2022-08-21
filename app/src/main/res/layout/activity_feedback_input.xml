@@ -1,0 +1,856 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".feedback_Input">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DFD7C5"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/FeedbackForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/feedback_form"
+            android:textColor="#464141"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="109dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="2dp"
+                    android:ems="10"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:inputType="textPersonName"
+                    android:padding="2dp"
+                    android:text="@string/name1"
+                    android:textColor="#2F2424"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:ignore="TextViewEdits,TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/Roll_No"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="2dp"
+                    android:ems="10"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:inputType="textPersonName"
+                    android:padding="2dp"
+                    android:text="@string/roll_no1"
+                    android:textColor="#2F2424"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/branch"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="2dp"
+                    android:ems="10"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:inputType="textPersonName"
+                    android:padding="2dp"
+                    android:text="@string/branch"
+                    android:textColor="#2F2424"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:ignore="LabelFor,TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/year"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginBottom="10dp"
+                    android:ems="10"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:inputType="textPersonName"
+                    android:padding="2dp"
+                    android:text="Semester:"
+                    android:textColor="#2F2424"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/nameUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="2dp"
+                    android:fontFamily="serif"
+                    android:padding="2dp"
+                    android:textColor="#3F3A2B"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/rollUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="2dp"
+                    android:fontFamily="serif"
+                    android:padding="2dp"
+                    android:textColor="#3F3A2B"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/branchUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="2dp"
+                    android:fontFamily="serif"
+                    android:padding="2dp"
+                    android:textColor="#3F3A2B"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/yearUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="serif"
+                    android:padding="2dp"
+                    android:textColor="#3F3A2B"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Note"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:padding="5dp"
+                    android:text="Read the questions carefully before submitting the form. In case of any false review a strong action would be taken against the student."
+                    android:textColor="#931717"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/No_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:padding="5dp"
+                    android:text="1 - Strongly Agree"
+                    android:textColor="#2F2424"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/No_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:padding="5dp"
+                    android:text="2 - Agree"
+                    android:textColor="#2F2424"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/No_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:padding="5dp"
+                    android:text="3 - Neutral"
+                    android:textColor="#2F2424"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/No_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:padding="5dp"
+                    android:text="4 - Disagree"
+                    android:textColor="#2F2424"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/No_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:padding="5dp"
+                    android:text="5 - Strongly Disagree"
+                    android:textColor="#2F2424"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/menu_drop1"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="2dp"
+                        android:gravity="center">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/faculty_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:layout_weight="1"
+                            android:hint="Faculty Name :"
+                            android:inputType="none"
+                            android:text="Choose any one"
+                            android:textColor="#514646"
+                            android:textStyle="bold" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/menu_drop2"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="2dp"
+                        android:gravity="center">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/sub_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:layout_weight="1"
+                            android:hint="Subject Name :"
+                            android:inputType="none"
+                            android:text="Choose any one"
+                            android:textColor="#514646"
+                            android:textStyle="bold" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/q1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="Please rate how prepared your teacher for the lessons"
+                android:textColor="#2F2424"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <EditText
+                    android:id="@+id/rating1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:gravity="clip_vertical"
+                    android:hint="@string/score_1_5"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:textColorHint="#8F8989"
+                    tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/q2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="@string/how_well_does_the_teacher_seem_to_understand_the_lesson"
+                android:textColor="#2F2424"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <EditText
+                    android:id="@+id/rating2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:gravity="clip_vertical"
+                    android:hint="@string/score_1_5"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:textColorHint="#8F8989"
+                    tools:ignore="DuplicateIds,TextContrastCheck" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/q3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="@string/do_you_feel_encouraged_to_participate_the_lessons"
+                android:textColor="#2F2424"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <EditText
+                    android:id="@+id/rating3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:gravity="clip_vertical"
+                    android:hint="@string/score_1_5"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:textColorHint="#8F8989"
+                    tools:ignore="DuplicateIds,TextContrastCheck" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/q4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="@string/does_the_teacher_communicate_in_ways_you_can_understand"
+                android:textColor="#2F2424"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <EditText
+                    android:id="@+id/rating4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:gravity="clip_vertical"
+                    android:hint="@string/score_1_5"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:textColorHint="#8F8989"
+                    tools:ignore="DuplicateIds,TextContrastCheck" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/q5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="@string/the_teacher_use_enough_variety_and_creative_methodology"
+                android:textColor="#2F2424"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <EditText
+                    android:id="@+id/rating5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:gravity="clip_vertical"
+                    android:hint="@string/score_1_5"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:textColorHint="#8F8989"
+                    tools:ignore="DuplicateIds" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/q6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="@string/does_the_teacher_seem_to_answer_questions_honestly_and_respectfully"
+                android:textColor="#2F2424"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <EditText
+                    android:id="@+id/rating6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:gravity="clip_vertical"
+                    android:hint="@string/score_1_5"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:textColorHint="#8F8989"
+                    tools:ignore="DuplicateIds" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/q7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="@string/the_teacher_clearly_explain_expectations_to_the_class"
+                android:textColor="#2F2424"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <EditText
+                    android:id="@+id/rating7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:gravity="clip_vertical"
+                    android:hint="@string/score_1_5"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:textColorHint="#8F8989"
+                    tools:ignore="DuplicateIds" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/q8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="@string/do_you_think_the_teacher_seem_attentive_to_students_needs"
+                android:textColor="#2F2424"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <EditText
+                    android:id="@+id/rating8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:gravity="clip_vertical"
+                    android:hint="@string/score_1_5"
+                    android:inputType="number"
+                    android:textColorHint="#8F8989"
+                    tools:ignore="DuplicateIds,TouchTargetSizeCheck" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/q9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="@string/do_you_think_the_teacher_use_class_time_wisely"
+                android:textColor="#2F2424"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <EditText
+                    android:id="@+id/rating9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:gravity="clip_vertical"
+                    android:hint="@string/score_1_5"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:textColorHint="#8F8989"
+                    tools:ignore="DuplicateIds" />
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/q10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="@string/do_you_agree_with_the_teacher_style_of_teaching"
+                android:textColor="#2F2424"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <EditText
+                    android:id="@+id/rating10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:gravity="clip_vertical"
+                    android:hint="@string/score_1_5"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:textColorHint="#8F8989"
+                    tools:ignore="DuplicateIds" />
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/Total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="@string/total"
+                android:textColor="#2F2424"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/total1"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:ems="10"
+                    android:gravity="clip_vertical"
+                    android:hint="@string/total"
+                    android:importantForAutofill="no"
+                    android:inputType= "none"
+                    android:textColorHint="#8F8989"
+                    tools:ignore="DuplicateIds,LabelFor,SpeakableTextPresentCheck" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/q11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="@string/additional_notes_comments_suggestions"
+                android:textColor="#2F2424"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <EditText
+                    android:id="@+id/suggestions"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="@string/type_here"
+                    android:inputType="textMultiLine"
+                    android:textAlignment="textStart"
+                    android:textColorHint="#8F8989"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"
+            android:text="By ticking, you are confirming that you have read, understood and agree to the given informations."
+            android:textColor="#9E3939"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/sendBtn"
+            android:layout_width="120dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_icons"
+            android:text="@string/submit"
+            android:textColor="#250909"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>

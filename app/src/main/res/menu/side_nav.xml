@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/Home_side_nav"
+            android:icon="@drawable/home_side_nav"
+            android:title="Home"/>
+
+        <item android:id="@+id/Profile_side_nav"
+            android:icon="@drawable/user_side_nav"
+            android:title="Dashboard"/>
+
+        <item android:id="@+id/Director_side_nav"
+            android:icon="@drawable/director_side_nav"
+            android:title="Director"/>
+
+
+        <item android:id="@+id/Notification_side_nav"
+            android:icon="@drawable/noti_side_nav"
+            android:title="Notification"/>
+
+
+        <item android:id="@+id/Privacy_policy_side_nav"
+            android:icon="@drawable/privacy_policy_side_nav"
+            android:title="Privacy Policy"/>
+
+        <item android:id="@+id/About_side_nav"
+            android:icon="@drawable/about_side_nav"
+            android:title="About Us"/>
+
+    </group >
+
+    <group android:checkableBehavior="single">
+        <item android:title="Rating">
+            <menu>
+                <item android:id="@+id/Review_us_side_nav"
+                    android:icon="@drawable/rating_side_nav"
+                    android:title="Review Us"/>
+
+            </menu>
+        </item>
+    </group>
+
+
+    <group android:checkableBehavior="single">
+        <item android:title="Authentication">
+            <menu>
+
+                <item
+                    android:id="@+id/Logout_side_nav"
+                    android:icon="@drawable/logout"
+                    android:title="Logout"/>
+            </menu>
+        </item>
+    </group>
+
+
+
+    <item
+        android:title="  ©️ by KSVCEM"/>
+
+</menu>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.ksvcem">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/cap"
+        android:roundIcon="@drawable/cap"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KSVCEM"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".ctMarks"
+            android:exported="false" />
+        <activity
+            android:name=".profile_page"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Faculty_Profile"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".contact"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".curriculum"
+            android:exported="false" />
+        <activity
+            android:name=".result"
+            android:exported="false" />
+        <activity
+            android:name=".profile"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".feedback_Input"
+            android:exported="false"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Introduction"
+            android:exported="false"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".loginSignIn"
+            android:exported="true"
+            android:label="signUp"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login_authenticate"
+            android:exported="true"
+            android:label="login"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Splash"
+            android:exported="true"
+            android:label="Splash"
+            android:noHistory="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
