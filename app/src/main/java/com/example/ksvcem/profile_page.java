@@ -24,11 +24,11 @@ public class profile_page extends AppCompatActivity {
     private TextView name,year,branch;
     private TextView email, number;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.profile_page);
-        getSupportActionBar().hide();
 
         name = findViewById(R.id.username);
         year = findViewById(R.id.sem);

@@ -1,7 +1,7 @@
 buildscript {
     dependencies {
         classpath 'com.google.gms:google-services:4.3.10'
-//        classpath 'com.android.tools.build:gradle'
+        classpath 'com.android.tools.build:gradle'
         classpath 'com.android.tools.build:gradle-settings:7.4.0-alpha09'
     }
     repositories {
@@ -20,6 +20,6 @@ task clean(type: Delete) {
 }
 
 //repositories {
-////    google()
+//    google()
 //    mavenCentral()
 //}

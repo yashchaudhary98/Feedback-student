@@ -97,7 +97,7 @@
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
-                <TextView
+                <EditText
                     android:id="@+id/query_name"
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
@@ -107,6 +107,7 @@
                     android:background="@drawable/dashboard_bg"
                     android:backgroundTint="#E9E8E0"
                     android:inputType="textPersonName"
+                    android:padding="5dp"
                     tools:ignore="SpeakableTextPresentCheck" />
 
                 <TextView
@@ -121,7 +122,7 @@
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
-                <TextView
+                <EditText
                     android:id="@+id/query_email"
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
@@ -131,6 +132,7 @@
                     android:background="@drawable/dashboard_bg"
                     android:backgroundTint="#E9E8E0"
                     android:inputType="textWebEmailAddress"
+                    android:padding="5dp"
                     tools:ignore="SpeakableTextPresentCheck" />
 
                 <TextView
@@ -145,7 +147,7 @@
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
-                <TextView
+                <EditText
                     android:id="@+id/query_msg"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
@@ -156,6 +158,7 @@
                     android:background="@drawable/dashboard_bg"
                     android:backgroundTint="#E9E8E0"
                     android:inputType="textShortMessage|textLongMessage"
+                    android:padding="5dp"
                     tools:ignore="SpeakableTextPresentCheck" />
 
                 <LinearLayout

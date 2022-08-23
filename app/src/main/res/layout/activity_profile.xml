@@ -10,6 +10,8 @@
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
 
+
+
     <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
@@ -22,31 +24,42 @@
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        android:layout_height="match_parent">
+
+
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
 
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="#67BA"
+                android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+                app:navigationIcon="@drawable/side_nav_tool" />
+
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_gravity="center">
+                android:layout_below="@+id/toolbar"
+                android:layout_gravity="center"
+                android:layout_marginTop="-56dp"
+                android:orientation="vertical">
 
 
                 <TextView
                     android:id="@+id/dashboard"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
                     android:layout_marginTop="50dp"
                     android:drawablePadding="20dp"
                     android:drawingCacheQuality="auto"
+                    android:gravity="center"
                     android:text="DASHBOARD"
                     android:textColor="#423B3B"
                     android:textSize="30sp"
@@ -344,7 +357,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="70dp"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:background="#4D4D4D"
                     app:menu="@menu/bottom_navmenu" />
 

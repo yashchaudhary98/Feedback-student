@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:layout_marginTop="-10dp"
     android:orientation="vertical"
     app:layout_insetEdge="none"
@@ -130,75 +130,6 @@
                 android:text="Not Registered Yet? Sign Up"
                 android:textSize="16sp"
                 android:textStyle="bold" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <View
-                    android:id="@+id/view2"
-                    android:layout_width="80dp"
-                    android:layout_height="2dp"
-                    android:layout_gravity="center"
-                    android:layout_marginEnd="10dp"
-                    android:background="#6A6868"
-                    android:foregroundGravity="center" />
-
-                <TextView
-                    android:id="@+id/OR"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginEnd="5dp"
-                    android:fontFamily="serif"
-                    android:gravity="center"
-                    android:text="@string/or"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <View
-                    android:id="@+id/view3"
-                    android:layout_width="80dp"
-                    android:layout_height="2dp"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="10dp"
-                    android:background="#6A6868"
-                    android:foregroundGravity="center" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:scaleX="0.7"
-                android:scaleY="0.7">
-
-                <TextView
-                    android:id="@+id/Google_login"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginBottom="40dp"
-                    android:drawablePadding="20dp"
-                    android:drawingCacheQuality="high"
-                    android:fontFamily="serif"
-                    android:gravity="center"
-                    android:text="@string/continue_with_google"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    app:drawableLeftCompat="@drawable/google1" />
-            </LinearLayout>
 
         </LinearLayout>
 

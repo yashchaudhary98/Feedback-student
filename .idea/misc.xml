@@ -17,7 +17,7 @@
         <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/layout/activity_ct_marks.xml" value="0.27850877192982454" />
         <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/layout/activity_curriculum.xml" value="0.26015625" />
         <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/layout/activity_data_input.xml" value="0.5" />
-        <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/layout/activity_faculty_profile.xml" value="0.33" />
+        <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/layout/activity_faculty_profile.xml" value="0.2689075630252101" />
         <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/layout/activity_feedback_input.xml" value="0.33" />
         <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/layout/activity_introduction.xml" value="0.28547008547008546" />
         <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/layout/activity_linked_in_page.xml" value="0.28547008547008546" />
@@ -33,8 +33,10 @@
         <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/layout/fragment_profile_page_1.xml" value="0.2846153846153846" />
         <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/layout/fragment_profile_page_user.xml" value="0.2846153846153846" />
         <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/layout/header.xml" value="0.25" />
-        <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/layout/profile_page.xml" value="0.2846153846153846" />
+        <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/layout/profile_page.xml" value="0.2296195652173913" />
         <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/layout/progress_dialog.xml" value="0.284737067122702" />
+        <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/layout/single.xml" value="0.1" />
+        <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/layout/single_row.xml" value="0.33" />
         <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/menu/bottom_navmenu.xml" value="0.28547008547008546" />
         <entry key="..\:/flutter_windows_2.10.5-stable/KSVCEM/app/src/main/res/menu/side_nav.xml" value="0.25" />
         <entry key="..\:/flutter_windows_2.2.3-stable/KSVCEM/app/src/main/res/drawable/backgroung_view.xml" value="0.2155" />
