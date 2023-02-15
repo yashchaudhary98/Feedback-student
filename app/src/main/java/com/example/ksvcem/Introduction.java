@@ -1,7 +1,5 @@
 package com.example.ksvcem;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -10,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Introduction extends AppCompatActivity {
 
@@ -38,7 +38,7 @@ public class Introduction extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_introduction);
-        getSupportActionBar().hide();
+//        getSupportActionBar().hide();
 
 
         Login = findViewById(R.id.Login);

@@ -1,9 +1,156 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ctMarks">
+    android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:layout_marginTop="80dp"
+        tools:context=".ctMarks"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="CT Marks"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_gravity="center" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/ct_page_bg"
+            android:backgroundTint="#FFFFFF"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/text_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="sans-serif-black"
+                android:padding="5dp"
+                android:text="Name"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/Stud_Name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/text_name"
+                android:layout_marginTop="10dp"
+                android:gravity="clip_vertical"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/text_Roll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Stud_Name"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-black"
+                android:padding="5dp"
+                android:text="Roll No"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/Stud_Roll_No"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/text_Roll"
+                android:layout_marginTop="10dp"
+                android:gravity="clip_vertical"
+                android:hint="Roll No"
+                android:inputType="number"
+                android:padding="5dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/text_branch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Stud_Roll_No"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-black"
+                android:padding="5dp"
+                android:text="Branch"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/Stud_Branch"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/text_branch"
+                android:layout_marginTop="10dp"
+                android:gravity="clip_vertical"
+                android:hint="Branch"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/text_session"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Stud_Branch"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-black"
+                android:padding="5dp"
+                android:text="Session"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/Stud_Session"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/text_session"
+                android:layout_marginTop="10dp"
+                android:gravity="clip_vertical"
+                android:hint="Session"
+                android:inputType="date"
+                android:padding="5dp"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/fetch"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_below="@id/Stud_Session"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="70dp"
+                android:gravity="center"
+                android:text="Submit"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</ScrollView>

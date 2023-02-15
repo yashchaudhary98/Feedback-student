@@ -2,7 +2,6 @@ package com.example.ksvcem;
 
 import static android.webkit.WebSettings.MIXED_CONTENT_ALWAYS_ALLOW;
 
-import android.os.Build;
 import android.os.Bundle;
 import android.webkit.CookieManager;
 import android.webkit.WebSettings;
@@ -19,7 +18,7 @@ public class result extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
-        getSupportActionBar().hide();
+//        getSupportActionBar().hide();
 
         webView = findViewById(R.id.web);
         webView.setWebViewClient(new WebViewClient());
@@ -27,12 +26,9 @@ public class result extends AppCompatActivity {
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+        webSettings.setMixedContentMode(MIXED_CONTENT_ALWAYS_ALLOW);
+        CookieManager.getInstance().setAcceptThirdPartyCookies(webView, true);
 
-            webSettings.setMixedContentMode(MIXED_CONTENT_ALWAYS_ALLOW);
-            CookieManager.getInstance().setAcceptThirdPartyCookies(webView, true);
-
-        }
     }
 
     @Override

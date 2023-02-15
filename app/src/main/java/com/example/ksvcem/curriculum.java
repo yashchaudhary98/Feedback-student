@@ -22,7 +22,7 @@ public class curriculum extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_curriculum);
-        getSupportActionBar().hide();
+//        getSupportActionBar().hide();
 
         View = findViewById(R.id.syllabus_view);
         View.loadUrl(url);

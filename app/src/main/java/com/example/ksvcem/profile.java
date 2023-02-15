@@ -10,13 +10,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBarDrawerToggle;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.drawerlayout.widget.DrawerLayout;
 
+import com.bumptech.glide.Glide;
+import com.example.ksvcem.databinding.ActivityProfileBinding;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -27,33 +24,21 @@ import com.google.firebase.database.ValueEventListener;
 
 
 @SuppressWarnings("ALL")
-public class profile extends AppCompatActivity {
+public class profile extends drawerBase{
+
+    ActivityProfileBinding activityProfileBinding;
 
     private ImageView feedback, res, data, chat;
     private TextView name, sem, branchStud;
     private ImageView profile, fac, ct;
 
-    DrawerLayout drawerLayout;
-    NavigationView navigationView;
-    Toolbar toolbar;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile);
+        activityProfileBinding = ActivityProfileBinding.inflate(getLayoutInflater());
+        setContentView(activityProfileBinding.getRoot());
 
-        drawerLayout = findViewById(R.id.side_nav);
-        navigationView = findViewById(R.id.navigation_side_nav);
-        toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayShowTitleEnabled(false);
-
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout,toolbar,R.string.navigation_open, R.string.navigation_close);
-
-        drawerLayout.addDrawerListener(toggle);
-        toggle.syncState();
-
-
+        allocateActivityTitle("Home");
 
 
         profile = findViewById(R.id.profile);
@@ -67,46 +52,35 @@ public class profile extends AppCompatActivity {
         fac = findViewById(R.id.faculty);
         ct = findViewById(R.id.ctMarks);
 
-        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
+        Glide.with(this)
+                .load(R.drawable.graduated)
+                .into(profile);
 
-        bottomNavigationView.setSelectedItemId(R.id.homenav);
+        Glide.with(this)
+                .load(R.drawable.queries)
+                .into(chat);
 
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()){
-                    case R.id.homenav:
-                        return true;
-                    case R.id.ProfileNav:
-                        Intent intent = new Intent(getApplicationContext(), profile_page.class);
-                        intent.putExtra("name", name.getText().toString());
-                        intent.putExtra("branch", branchStud.getText().toString());
-                        intent.putExtra("semester", sem.getText().toString());
-                        startActivityForResult(intent, 1);
-                        return true;
+        Glide.with(this)
+                .load(R.drawable.book)
+                .into(data);
 
-                    case R.id.webnav:
-                        Intent i = new Intent(Intent.ACTION_VIEW);
-                        i.setData(Uri.parse("https://ksvira.edu.in/vira_home.php"));
-                        startActivity(i);
-                        return true;
+        Glide.with(this)
+                .load(R.drawable.results)
+                .into(res);
 
-                    case R.id.LinkedInNav:
-                        Intent j = new Intent(Intent.ACTION_VIEW);
-                        j.setData(Uri.parse("https://www.linkedin.com/school/kunwar-satyavira-college-of-engineering-and-management-bijnor./about/"));
-                        startActivity(j);
-                        return true;
+        Glide.with(this)
+                .load(R.drawable.teacher)
+                .into(fac);
 
-                    case R.id.TweetNav:
-                        Intent k = new Intent(Intent.ACTION_VIEW);
-                        k.setData(Uri.parse("https://twitter.com/ksvcem"));
-                        startActivity(k);
-                        return true;
+        Glide.with(this)
+                .load(R.drawable.review)
+                .into(feedback);
 
-                }
-                return false;
-            }
-        });
+        Glide.with(this)
+                .load(R.drawable.ctmarks)
+                .into(ct);
+
+
 
         profile.setOnClickListener(new View.OnClickListener() {
             @SuppressWarnings("deprecation")
@@ -200,17 +174,54 @@ public class profile extends AppCompatActivity {
 
         });
 
+
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
+
+        bottomNavigationView.setSelectedItemId(R.id.ProfileNav);
+
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()){
+                    case R.id.homenav:
+                        Intent intent = new Intent(profile.this, profile.class);
+                        startActivity(intent);
+                        break;
+                    case R.id.ProfileNav:
+                        Intent h = new Intent(getApplicationContext(), profile_page.class);
+                        h.putExtra("name", name.getText().toString());
+                        h.putExtra("branch", branchStud.getText().toString());
+                        h.putExtra("semester", sem.getText().toString());
+                        startActivityForResult(h, 1);
+                        break;
+
+                    case R.id.webnav:
+                        Intent i = new Intent(Intent.ACTION_VIEW);
+                        i.setData(Uri.parse("https://ksvira.edu.in/vira_home.php"));
+                        startActivity(i);
+                        break;
+
+                    case R.id.LinkedInNav:
+                        Intent j = new Intent(Intent.ACTION_VIEW);
+                        j.setData(Uri.parse("https://www.linkedin.com/school/kunwar-satyavira-college-of-engineering-and-management-bijnor./about/"));
+                        startActivity(j);
+                        break;
+
+                    case R.id.TweetNav:
+                        Intent k = new Intent(Intent.ACTION_VIEW);
+                        k.setData(Uri.parse("https://twitter.com/ksvcem"));
+                        startActivity(k);
+                        break;
+
+                }
+                return false;
+            }
+        });
+
+
+
+
+
     }
 
-//    @Override
-//    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-//        super.onActivityResult(requestCode, resultCode, data);
-//        if(requestCode==1){
-//
-//            if(resultCode== Activity.RESULT_OK){
-//
-//            }
-//
-//        }
-//    }
 }

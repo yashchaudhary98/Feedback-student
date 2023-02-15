@@ -19,8 +19,6 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-import java.util.Objects;
-
 public class loginSignIn extends AppCompatActivity {
 
 
@@ -45,7 +43,6 @@ public class loginSignIn extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_sign_in);
-        Objects.requireNonNull(getSupportActionBar()).hide();
 
 
         loggingIn = findViewById(R.id.loggedin);
@@ -65,7 +62,6 @@ public class loginSignIn extends AppCompatActivity {
         loggingIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                progressDialog.show();
                 userinfo();
             }
         });
@@ -86,13 +82,13 @@ public class loginSignIn extends AppCompatActivity {
         if (!Email.isEmpty() && Patterns.EMAIL_ADDRESS.matcher(Email).matches()) {
             if (!Password.isEmpty()) {
 
+                progressDialog.show();
                 mAuth.signInWithEmailAndPassword(Email, Password)
                         .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
+                                progressDialog.dismiss();
                                 if (task.isSuccessful()) {
-
-                                    progressDialog.hide();
 
                                     FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
@@ -101,7 +97,6 @@ public class loginSignIn extends AppCompatActivity {
                                         Intent intent = new Intent(loginSignIn.this, profile.class);
                                         intent.putExtra("Exit", false);
 //                                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                                        progressDialog.hide();
                                         startActivity(intent);
 
                                         Toast.makeText(loginSignIn.this, "Login Successful", Toast.LENGTH_LONG).show();
@@ -115,19 +110,18 @@ public class loginSignIn extends AppCompatActivity {
                                     Toast.makeText(loginSignIn.this, "Incorrect Username and Password", Toast.LENGTH_LONG).show();
 
                                 }
+                                progressDialog.hide();
                             }
 
                         });
 
             } else {
-                progressDialog.hide();
                 Pass_type.setError("Enter the valid Password");
                 Pass_type.requestFocus();
                 return;
             }
 
         } else if (Email.isEmpty()) {
-            progressDialog.hide();
             email_type.setError("Enter the valid Email");
             email_type.requestFocus();
             return;

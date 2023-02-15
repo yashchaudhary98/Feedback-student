@@ -4,13 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".feedback_Input">
+    tools:context=".feedback_Input"
+    android:background="#DFD7C5">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#DFD7C5"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginTop="100dp">
 
         <TextView
             android:id="@+id/FeedbackForm"
@@ -843,11 +844,10 @@
             android:layout_height="0dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:layout_marginBottom="40dp"
+            android:layout_marginBottom="150dp"
             android:layout_weight="1"
             android:background="@drawable/bg_icons"
             android:text="@string/submit"
-            android:textColor="#250909"
             android:textSize="18sp"
             android:textStyle="bold" />
 

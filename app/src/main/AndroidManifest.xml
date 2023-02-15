@@ -15,35 +15,44 @@
         android:theme="@style/Theme.KSVCEM"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".PrivacyPolicy"
+            android:exported="false" />
+        <activity
+            android:name=".drawerBase"
+            android:exported="false" />
+        <activity
             android:name=".ctMarks"
             android:exported="false"
-            android:screenOrientation="portrait"/>
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".profile_page"
             android:exported="false"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:noHistory="true"
             android:screenOrientation="portrait" />
         <activity
             android:name=".Faculty_Profile"
             android:exported="false"
+            android:noHistory="true"
             android:screenOrientation="portrait" />
         <activity
             android:name=".contact"
             android:exported="false"
+            android:noHistory="true"
             android:screenOrientation="portrait" />
         <activity
             android:name=".curriculum"
             android:exported="false"
+            android:noHistory="true"
             android:screenOrientation="portrait" />
         <activity
             android:name=".result"
             android:exported="false"
+            android:noHistory="true"
             android:screenOrientation="portrait" />
         <activity
             android:name=".profile"
             android:exported="false"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-
             android:screenOrientation="portrait" />
         <activity
             android:name=".feedback_Input"

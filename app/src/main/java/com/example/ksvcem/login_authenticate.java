@@ -49,7 +49,7 @@ public class login_authenticate extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_authenticate);
-        getSupportActionBar().hide();
+//        getSupportActionBar().hide();
 
         mAuth = FirebaseAuth.getInstance();
 

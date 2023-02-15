@@ -14,7 +14,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -22,6 +21,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.ksvcem.databinding.ActivityFeedbackInputBinding;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -34,10 +34,10 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Objects;
 
-public class feedback_Input extends AppCompatActivity implements View.OnClickListener {
+public class feedback_Input extends drawerBase implements View.OnClickListener {
 
+    ActivityFeedbackInputBinding activityFeedbackInputBinding;
     private EditText num1, num2, num3, num4, num5, num6, num7, num8, num9, num10;
     private TextView result;
 //    private  ProgressDialog progressDialog;
@@ -75,8 +75,10 @@ public class feedback_Input extends AppCompatActivity implements View.OnClickLis
         System.out.println("Initialization of the Instance");
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_feedback_input);
-        Objects.requireNonNull(getSupportActionBar()).hide();
+        activityFeedbackInputBinding = ActivityFeedbackInputBinding.inflate(getLayoutInflater());
+        setContentView(activityFeedbackInputBinding.getRoot());
+
+        allocateActivityTitle("Feedback");
 
 
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
@@ -301,7 +303,8 @@ public class feedback_Input extends AppCompatActivity implements View.OnClickLis
             return;
         }
 
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, "https://script.google.com/macros/s/AKfycbyATbAi3PFSRHKYkuAdTpTc7ci6GoG3nTtsSJOnF-wlTd8OwANmk5q3G6XQCx9YegxWXg/exec", new Response.Listener<String>() {
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, "https://script.google.com/macros/s/AKfycbyATbAi3PFSRHKYkuAdTpTc7ci6GoG3nTtsSJOnF-wlTd8OwANmk5q3G6XQCx9YegxWXg/exec",
+                new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
 
