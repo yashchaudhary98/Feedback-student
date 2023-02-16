@@ -19,6 +19,14 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class drawerBase extends AppCompatActivity {
 
+    @Override
+    public void onLowMemory() {
+        super.onLowMemory();
+
+        // Call the garbage collector to release memory from the native heap
+        Runtime.getRuntime().gc();
+    }
+
 
     DrawerLayout drawerLayout;
     NavigationView navigationView;
@@ -34,7 +42,6 @@ public class drawerBase extends AppCompatActivity {
         navigationView = drawerLayout.findViewById(R.id.navigation_side_nav);
         toolbar = drawerLayout.findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-//        getSupportActionBar().setDisplayShowTitleEnabled(false);
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout,toolbar,R.string.navigation_open, R.string.navigation_close);
 
@@ -42,7 +49,7 @@ public class drawerBase extends AppCompatActivity {
         toggle.syncState();
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
-//        bottomNavigationView.setSelectedItemId(R.id.invisible);
+        bottomNavigationView.setSelectedItemId(R.id.invisible);
 
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -50,13 +57,9 @@ public class drawerBase extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()){
                     case R.id.homenav:
-                        break;
-                    case R.id.ProfileNav:
-//                        Intent intent = new Intent(getApplicationContext(), profile_page.class);
-//                        intent.putExtra("name", name.getText().toString());
-//                        intent.putExtra("branch", branchStud.getText().toString());
-//                        intent.putExtra("semester", sem.getText().toString());
-//                        startActivityForResult(intent, 1);
+                        Intent intent = new Intent(getApplicationContext(), profile.class);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                        startActivity(intent);
                         break;
 
                     case R.id.webnav:

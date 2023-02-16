@@ -13,6 +13,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -57,6 +58,10 @@ public class loginSignIn extends AppCompatActivity {
 
         progressDialog = new ProgressDialog(loginSignIn.this);
         progressDialog.setMessage("Loading...");
+
+        LottieAnimationView animationView = findViewById(R.id.animation1);
+        animationView.enableMergePathsForKitKatAndAbove(true);
+        animationView.setSpeed(0.5f);
 
 
         loggingIn.setOnClickListener(new View.OnClickListener() {

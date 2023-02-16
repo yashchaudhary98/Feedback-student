@@ -1,9 +1,7 @@
 package com.example.ksvcem;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -13,7 +11,6 @@ import androidx.annotation.NonNull;
 
 import com.bumptech.glide.Glide;
 import com.example.ksvcem.databinding.ActivityProfileBinding;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -173,51 +170,6 @@ public class profile extends drawerBase{
             }
 
         });
-
-
-        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
-
-        bottomNavigationView.setSelectedItemId(R.id.ProfileNav);
-
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()){
-                    case R.id.homenav:
-                        Intent intent = new Intent(profile.this, profile.class);
-                        startActivity(intent);
-                        break;
-                    case R.id.ProfileNav:
-                        Intent h = new Intent(getApplicationContext(), profile_page.class);
-                        h.putExtra("name", name.getText().toString());
-                        h.putExtra("branch", branchStud.getText().toString());
-                        h.putExtra("semester", sem.getText().toString());
-                        startActivityForResult(h, 1);
-                        break;
-
-                    case R.id.webnav:
-                        Intent i = new Intent(Intent.ACTION_VIEW);
-                        i.setData(Uri.parse("https://ksvira.edu.in/vira_home.php"));
-                        startActivity(i);
-                        break;
-
-                    case R.id.LinkedInNav:
-                        Intent j = new Intent(Intent.ACTION_VIEW);
-                        j.setData(Uri.parse("https://www.linkedin.com/school/kunwar-satyavira-college-of-engineering-and-management-bijnor./about/"));
-                        startActivity(j);
-                        break;
-
-                    case R.id.TweetNav:
-                        Intent k = new Intent(Intent.ACTION_VIEW);
-                        k.setData(Uri.parse("https://twitter.com/ksvcem"));
-                        startActivity(k);
-                        break;
-
-                }
-                return false;
-            }
-        });
-
 
 
 

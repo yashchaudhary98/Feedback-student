@@ -13,8 +13,11 @@
     <item android:title="LinkedIn"
         android:icon="@drawable/linkedin"
         android:id="@+id/LinkedInNav"/>
-    <item android:title="Profile"
-        android:icon="@drawable/profile"
-        android:id="@+id/ProfileNav"/>
+
+    <item
+        android:id="@+id/invisible"
+        android:visible="false"
+        android:icon="@drawable/arrow_forward"
+        android:title="account" />
 
 </menu>
